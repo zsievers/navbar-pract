@@ -1,3 +1,9 @@
+import Layout from "../../components/Layout";
+
 export default function secondProject() {
-  return <h1>Second Project</h1>;
+  return (
+    <Layout>
+      <h1>Second Project</h1>;
+    </Layout>
+  );
 }

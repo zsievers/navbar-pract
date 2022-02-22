@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import classes from "./Header.module.scss";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
     width: undefined,
     height: undefined,
@@ -27,13 +28,16 @@ const Header = () => {
       setMenuOpen(false);
     }
   }, [size.width, menuOpen]);
+
   const menuToggleHandler = () => {
     setMenuOpen((p) => !p);
   };
   return (
     <header className={classes.header}>
       <div className={classes.header__content}>
-        <h2 className={classes.header__content__logo}>navbar</h2>
+        <Link className={classes.header__content__logo} href="/">
+          navbar
+        </Link>
 
         <nav
           className={`${classes.header__content__nav} ${
@@ -42,16 +46,24 @@ const Header = () => {
         >
           <ul>
             <li>
-              <a href="/">Page One</a>
+              <Link href="/about-dt" onClick={menuToggleHandler}>
+                About Us Page
+              </Link>
             </li>
             <li>
-              <a href="/">Page Two</a>
+              <Link href="/projects" onClick={menuToggleHandler}>
+                Projects Page
+              </Link>
             </li>
             <li>
-              <a href="/">Page Three</a>
+              <Link href="/" onClick={menuToggleHandler}>
+                Home
+              </Link>
             </li>
           </ul>
-          <button>Free Estimate</button>
+          <Link href="/freeEstimate">
+            <button>Free Estimate</button>
+          </Link>
         </nav>
         <div className={classes.header__content__toggle}>
           {!menuOpen ? (

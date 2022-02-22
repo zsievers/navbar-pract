@@ -1,5 +1,10 @@
+import Layout from "../components/Layout";
 function aboutDT() {
-  return <h1>About Us</h1>;
+  return (
+    <Layout>
+      <h1>About Us</h1>
+    </Layout>
+  );
 }
 
 export default aboutDT;
