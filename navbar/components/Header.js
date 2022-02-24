@@ -35,8 +35,8 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <div className={classes.header__content}>
-        <Link className={classes.header__content__logo} href="/">
-          navbar
+        <Link href="/">
+          <a className={classes.header__content__logo}>navbar</a>
         </Link>
 
         <nav
@@ -62,7 +62,9 @@ const Header = () => {
             </li>
           </ul>
           <Link href="/freeEstimate">
-            <button>Free Estimate</button>
+            <button onClick={classes.header__content__toggle}>
+              Free Estimate
+            </button>
           </Link>
         </nav>
         <div className={classes.header__content__toggle}>
