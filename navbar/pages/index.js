@@ -1,10 +1,10 @@
-// import "../styles/globals.scss";
-import Layout from "../components/Layout";
+import Layout from "./../components/navbar/Layout";
+import Masonry from "./../components/masonry/masonry";
 
 export default function Home() {
   return (
     <Layout>
-      <h1>Home Page</h1>
+      <Masonry />
     </Layout>
   );
 }

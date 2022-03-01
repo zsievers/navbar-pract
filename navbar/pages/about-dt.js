@@ -1,9 +1,9 @@
-import Layout from "../components/Layout";
-
+import Layout from "./../components/navbar/Layout";
+import AboutUs from "../components/about-dt/about-dt";
 export default function aboutDT() {
   return (
     <Layout>
-      <h1>About Us</h1>
+      <AboutUs />
     </Layout>
   );
 }
