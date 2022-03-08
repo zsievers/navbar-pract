@@ -1,56 +1,62 @@
 import React from "react";
+import Link from "next/link";
 import classes from "./masonry.module.scss";
 
 const Masonry = () => {
   return (
     <div className={classes.masonry}>
       <div className={classes.item}>
-        <img src={"../../services/bobcat.jpg"} />
+        <Link href="/projects">
+          <a>
+            <img src={"../../images/bobcat.jpg"} />
+          </a>
+        </Link>
+        <h1>Bobcat Services</h1>
       </div>
       <div className={classes.item}>
-        <img src={"../../services/deck-design.png"} />
+        <img src={"../../images/deck-design.png"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/deck-stain.png"} />
+        <img src={"../../images/deck-stain.png"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/fence.png"} />
+        <img src={"../../images/fence.png"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/renos.png"} />
+        <img src={"../../images/renos.png"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/inside-flooring.jpg"} />
+        <img src={"../../images/inside-flooring.jpg"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/landscape-design.png"} />
+        <img src={"../../images/landscape-design.png"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/gutter.png"} />
+        <img src={"../../images/gutter.png"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/fire-pit.jpg"} />
+        <img src={"../../images/fire-pit.jpg"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/mulching.png"} />
+        <img src={"../../images/mulching.png"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/patio-walkway.jpg"} />
+        <img src={"../../images/patio-walkway.jpg"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/retaining-wall.png"} />
+        <img src={"../../images/retaining-wall.png"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/leaf-removal.png"} />
+        <img src={"../../images/leaf-removal.png"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/painting-interior.png"} />
+        <img src={"../../images/painting-interior.png"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/pressure-washing.jpg"} />
+        <img src={"../../images/pressure-washing.jpg"} />
       </div>
       <div className={classes.item}>
-        <img src={"../../services/shrub.png"} />
+        <img src={"../../images/shrub.png"} />
       </div>
     </div>
   );

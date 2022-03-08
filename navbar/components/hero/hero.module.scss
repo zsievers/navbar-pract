@@ -1,0 +1,101 @@
+@import "../../styles/variables.scss";
+
+.section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: min(80vh, 600px);
+  // background-color: #312e81;
+  margin: 2rem 0 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+
+  &:before {
+    position: absolute;
+    mix-blend-mode: overlay;
+    filter: brightness(70%);
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../public/images/hero1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  h1,
+  h2 {
+    margin-top: 2rem;
+    color: white;
+  }
+
+  h1 {
+    position: relative;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    div {
+      color: #ddd6fe;
+    }
+  }
+
+  h2 {
+    font-size: clamp(1.3rem, 2vw, 3rem);
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: clamp(1.3rem, 3vw, 4rem);
+    color: white;
+  }
+}
+
+.cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 1.5rem;
+
+  button {
+    border: none;
+    padding: 1rem 3rem;
+    font-size: clamp(1.1rem, 1.3vw, 3rem);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  button:first-of-type {
+    background-color: white;
+    color: #4c1d95;
+    transition: all 300ms ease-in;
+
+    &:hover {
+      background-color: #4c1d95;
+      color: white;
+    }
+  }
+
+  button:nth-of-type(2) {
+    background-color: #2563eb;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: #2563eb;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .cta {
+    flex-direction: row;
+  }
+}

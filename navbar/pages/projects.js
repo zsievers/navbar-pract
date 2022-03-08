@@ -1,9 +1,11 @@
 import Layout from "./../components/navbar/Layout";
+import ImageSlider from "../components/imageSlider/imageSlider";
+import { SliderData } from "../components/imageSlider/sliderData";
 
 export default function projects() {
   return (
     <Layout>
-      <h1>Projects Page</h1>
+      <ImageSlider slides={SliderData} />
     </Layout>
   );
 }

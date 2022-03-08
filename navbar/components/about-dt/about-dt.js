@@ -13,7 +13,7 @@ const AboutUs = () => {
         </div>
         <div className="headshot">
           <img
-            src={"../../services/bobcat.jpg"}
+            src={"../../images/bobcat.jpg"}
             className={classes.headshot_image}
           />
           <Link href="/freeEstimate">
