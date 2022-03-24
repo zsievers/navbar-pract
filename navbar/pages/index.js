@@ -1,5 +1,5 @@
 import Layout from "./../components/navbar/Layout";
-import Masonry from "./../components/masonry/masonry";
+import Services from "../components/services/services";
 import Hero from "../components/hero/hero";
 import Testimonials from "../components/testimonials/testimonials";
 
@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Layout />
       <Hero />
-      <Masonry />
+      <Services />
       <Testimonials />
     </>
   );

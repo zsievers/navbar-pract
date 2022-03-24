@@ -5,7 +5,7 @@ function hero() {
   return (
     <div className={classes.section}>
       <h1>
-        Take Control
+        knoxville's first choice for all your home remodel needs
         <div>customer support</div>
       </h1>
       <p>Lorem10</p>

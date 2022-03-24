@@ -1,6 +1,6 @@
 @import "./../../styles/variables.scss";
 
-.masonry {
+.services {
   margin: 20px 30px 20px 30px;
   column-count: 3;
   column-gap: 16px;
@@ -24,19 +24,19 @@
 }
 
 @media (max-width: 1199px) {
-  .masonry {
+  .services {
     column-count: 3;
   }
 }
 
 @media (max-width: 991px) {
-  .masonry {
+  .services {
     column-count: 2;
   }
 }
 
 @media (max-width: 767px) {
-  .masonry {
+  .services {
     column-count: 1;
   }
 }

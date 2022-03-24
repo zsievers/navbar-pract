@@ -36,7 +36,12 @@ const Header = () => {
     <header className={classes.header}>
       <div className={classes.header__content}>
         <Link href="/">
-          <a className={classes.header__content__logo}>navbar</a>
+          <a>
+            <img
+              src={"../../images/newLogo.png"}
+              className={classes.header__content__logo}
+            />
+          </a>
         </Link>
 
         <nav
@@ -47,12 +52,17 @@ const Header = () => {
           <ul>
             <li>
               <Link href="/about-dt" onClick={menuToggleHandler}>
-                About Us Page
+                About Us
               </Link>
             </li>
             <li>
               <Link href="/projects" onClick={menuToggleHandler}>
-                Projects Page
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link href="/#services" onClick={menuToggleHandler}>
+                Services
               </Link>
             </li>
             <li>
