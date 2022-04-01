@@ -7,12 +7,12 @@ const Footer = () => {
   return (
     <>
       <section className={classes.footer}>
-        <section className={classes.footer_logo}>
+        {/* <section className={classes.footer_logo}>
           <img
             src={"../../images/newLogo.png"}
             className={classes.footer_logo_img}
           />
-        </section>
+        </section> */}
         <section className={classes.footer_info}>
           <ul className={classes.footer_info_links}>
             <li>
