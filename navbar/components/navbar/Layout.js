@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+// import Footer from "../footer/footer";
 
 import classes from "./Layout.module.scss";
 
@@ -8,7 +9,6 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <div className={classes.container}>{children}</div>
-      {/* <Footer /> */}
     </>
   );
 };
