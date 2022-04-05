@@ -1,9 +1,14 @@
 import Layout from "./../components/navbar/Layout";
-import AboutUs from "../components/about-dt/about-dt";
+import Ctest from "../components/testimonials/carousel";
+import Footer from "../components/footer/footer";
+
 export default function aboutDT() {
   return (
-    <Layout>
-      <AboutUs />
-    </Layout>
+    <>
+      <Layout />
+      <Ctest />
+
+      <Footer />
+    </>
   );
 }

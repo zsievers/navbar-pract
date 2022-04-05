@@ -8,7 +8,7 @@ export default function freeEstimate() {
     <>
       <Layout>
         <h1>Free Estimate</h1>
-      </Layout>
+      </Layout>{" "}
       <Mailer />
       <Mailer2 />
       <Footer />
