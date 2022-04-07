@@ -1,0 +1,16 @@
+@import "../../styles//variables.scss";
+
+.carousel {
+    margin: 0px 20px 0px 20px;
+border-top: solid 15px #ffa91d;
+// border-top: solid 10px #6c757d
+ .carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+    img {
+        height: 100%;
+    }
+}
+

@@ -70,12 +70,15 @@ const Header = () => {
                 Home
               </Link>
             </li>
-          </ul>
-          <Link href="/freeEstimate">
-            <button onClick={classes.header__content__toggle}>
+            <li>
+              <Link href="/freeEstimate" onClick={menuToggleHandler}>
+                Free Estimate
+                {/* <button onClick={classes.header__content__toggle}>
               Free Estimate
-            </button>
-          </Link>
+            </button> */}
+              </Link>
+            </li>
+          </ul>
         </nav>
         <div className={classes.header__content__toggle}>
           {!menuOpen ? (

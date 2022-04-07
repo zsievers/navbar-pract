@@ -8,8 +8,7 @@ function Ctest() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../../images/cr2.jpg"
-          // style={{ height: "500px" }}
+          src="../../images/cr6.png"
           alt="First slide"
         />
       </Carousel.Item>
@@ -17,15 +16,13 @@ function Ctest() {
         <img
           className="d-block w-100"
           src="../../images/project3/5after.JPG"
-          // style={{ height: "500px" }}
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../../images/cr1.jpg"
-          // style={{ height: "500px" }}
+          src="../../images/cr5.png"
           alt="Third slide"
         />
       </Carousel.Item>

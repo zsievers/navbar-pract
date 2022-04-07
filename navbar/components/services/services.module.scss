@@ -1,25 +1,37 @@
 @import "./../../styles/variables.scss";
 
+
 .services {
-  margin: 20px 30px 20px 30px;
+  margin: 2rem 5rem auto;
   column-count: 3;
   column-gap: 16px;
+  
   img {
     width: 100%;
   }
 }
+
 .item {
-  padding: 20px;
-  border: 1px solid #999;
-  border-radius: 5px;
-  background: #fff;
-  break-inside: avoid-column;
-  margin-bottom: 1rem;
-  // width: 100%;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+    padding: 1rem 1rem;
+    transition: box-shadow 0.25s;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #0000000f;
+    -moz-column-break-inside: avoid;
+    break-inside: avoid-column;
+    margin-bottom: 1rem;
+
   h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  p{
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 20px;
   }
 }
 
@@ -35,7 +47,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 699px) {
   .services {
     column-count: 1;
   }
