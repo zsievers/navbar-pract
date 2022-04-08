@@ -1,0 +1,40 @@
+@import "./../../styles/variables.scss";
+
+.container {
+  font-style: italic;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ffa91d;
+
+  .text {
+    padding: 1rem 2rem;
+    background-color: #7c7c7c;
+    font-size: 3rem;
+    border-radius: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  h3 {
+    color: #464646;
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  .container {
+    h3 {
+      font-size: 2.5rem;
+    }
+    .text {
+      font-size: 2rem;
+    }
+  }
+}

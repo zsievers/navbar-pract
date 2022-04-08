@@ -1,4 +1,5 @@
 import emailjs from "emailjs-com";
+import classes from "./contact1.module.scss";
 
 const Mailer = () => {
   function sendEmail(e) {
@@ -18,26 +19,31 @@ const Mailer = () => {
   }
 
   return (
-    <div
-      className="container border"
-      style={{ marginTop: "50px", width: "50%" }}
-    >
-      <h1 style={{ marginTop: "25px" }}>Contact Form</h1>
+    <div className={classes.container}>
+      <h1>Contact</h1>
       <form
         className="row"
         style={{ margin: "25px 85px 75px 100px" }}
         onSubmit={sendEmail}
       >
-        <label>Name</label>
+        <label>
+          Name <span>*</span>
+        </label>
         <input type="text" name="user_name" className="form-control" />
 
-        <label>Email</label>
+        <label>
+          Email <span>*</span>
+        </label>
         <input type="email" name="user_email" className="form-control" />
 
-        <label>Phone Number</label>
+        <label>
+          Phone Number <span>*</span>
+        </label>
         <input type="tel" name="user_phone_number" className="form-control" />
 
-        <label>Message</label>
+        <label>
+          Message <span>*</span>
+        </label>
         <textarea
           type="message"
           name="user_message"
@@ -46,9 +52,9 @@ const Mailer = () => {
         />
         <input
           type="submit"
-          value="Send"
-          className="form-control btn btn-primary"
-          style={{ marginTop: "30px" }}
+          value="Submit"
+          className={classes.button}
+          // style={{ marginTop: "30px", fontSize: "1.75rem" }}
         />
       </form>
     </div>

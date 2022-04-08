@@ -1,0 +1,76 @@
+@import "./../../styles/variables.scss";
+
+.container {
+  border-top: solid 1rem #ffa91d;
+  margin: 0 auto;
+  max-width: 720px;
+  display: flex;
+  margin-bottom: 5rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  h1 {
+    font-size: 4rem;
+    color: #464646;
+    margin-top: 2.5rem;
+  }
+  label {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+  span {
+    font-size: 1.5rem;
+    color: rgb(99, 0, 0);
+  }
+  input,
+  textarea {
+    background-color: #f5f5f5;
+    font-size: 1.6rem;
+  }
+
+  .button {
+    margin-top: 2.5rem;
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #464646;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    min-height: 3rem;
+    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+
+  .button:hover,
+  .button:focus {
+    background-color: #ffa91d;
+    color: #464646;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  }
+
+  .button:hover {
+    transform: translateY(-1px);
+  }
+
+  .button:active {
+    background-color: #ffa91d;
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    transform: translateY(0);
+  }
+}
