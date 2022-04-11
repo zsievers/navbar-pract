@@ -1,11 +1,13 @@
 import Layout from "./../components/navbar/Layout";
-import ImageSlider from "../components/imageSlider/imageSlider";
-import { SliderData } from "../components/imageSlider/sliderData";
+import ProjectGrid from "../components/projectGrid/project-grid";
+import Footer from "../components/footer/footer";
 
 export default function projects() {
   return (
-    <Layout>
-      <ImageSlider slides={SliderData} />
-    </Layout>
+    <>
+      <Layout />
+      <ProjectGrid />
+      <Footer />
+    </>
   );
 }

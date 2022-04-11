@@ -21,6 +21,12 @@ const Mailer = () => {
   return (
     <div className={classes.container}>
       <h1>Contact</h1>
+      <p>
+        If you have questions about the services we offer here at Dynamic Trade,
+        please fill out this contact form and we will reach out soon.
+      </p>
+      <br />
+      <p> We can't wait to partner with you!</p>
       <form
         className="row"
         style={{ margin: "25px 85px 75px 100px" }}

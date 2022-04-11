@@ -2,13 +2,19 @@
 
 .container {
   border-top: solid 1rem #ffa91d;
-  margin: 0 auto;
-  max-width: 720px;
+  margin: 0  auto;
+  max-width: 80rem;
   display: flex;
   margin-bottom: 5rem;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+
+  p {
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+  }
 
   h1 {
     font-size: 4rem;
