@@ -1,0 +1,86 @@
+@import "../../styles//variables.scss";
+.container {
+    max-width: 1250px;
+    padding: 0rem 3rem;
+    margin: 2rem auto;
+    overflow: hidden;
+
+    h1 {
+        font-size: 4rem;
+        font-style: italic;
+        font-style: oblique;
+        color: #464646;
+        font-weight: 400;
+    }
+
+    hr {
+        width: 10%;
+        color: #464646;
+        margin-bottom: 3rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+        position: relative;
+
+        .projects {
+            position: relative;
+            display: flex;
+        }
+
+        .image {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .container {
+        h1 {
+            font-size: 3rem;
+        }
+
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+
+            .projectTitle {
+                font-size: 1.5rem;
+                font-weight: 600;
+                padding: 16px 32px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 0rem 4rem;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0rem 2rem;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+        }
+    }
+}

@@ -7,13 +7,10 @@ export default function ProjectGrid() {
     <>
       <div className={classes.container}>
         <h1>View Our Projects</h1>
-
-        <div>
-          <hr />
-        </div>
+        <hr />
         <div className={classes.grid}>
           <div className={classes.projects}>
-            <a href="/project1">
+            <a href="/projects/project-1">
               <img
                 src={"./images/project1/IMG_1630.JPG"}
                 className={classes.image}
@@ -23,7 +20,7 @@ export default function ProjectGrid() {
             </a>
           </div>
           <div className={classes.projects}>
-            <a href="project2">
+            <a href="/projects/project-2">
               <img
                 src={"./images/project2/after4.png"}
                 className={classes.image}
@@ -35,7 +32,7 @@ export default function ProjectGrid() {
           </div>
 
           <div className={classes.projects}>
-            <a href="/project3">
+            <a href="/projects/project-3">
               <img
                 src={"./images/project3/3after2.JPEG"}
                 className={classes.image}
@@ -46,8 +43,7 @@ export default function ProjectGrid() {
             </a>
           </div>
           <div className={classes.projects}>
-            {" "}
-            <a href="/project4">
+            <a href="/projects/project-4">
               <img
                 src={"./images/project4/IMG_1591.JPG"}
                 className={classes.image}
@@ -57,7 +53,7 @@ export default function ProjectGrid() {
           </div>
 
           <div className={classes.projects}>
-            <a href="/bathrooms">
+            <a href="/projects/bathrooms">
               <img
                 src={"./images/Bathrooms/bathroom1.JPEG"}
                 className={classes.image}

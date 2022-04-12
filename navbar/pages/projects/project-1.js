@@ -1,19 +1,13 @@
-import Layout from "../../components/Layout";
+import Layout from "../../components/navbar/Layout";
+import P1 from "../../components/p1/p1";
+import Footer from "../../components/footer/footer";
 
 export default function Project1() {
   return (
     <>
-      <Layout>
-        <h1>First Project</h1>
-      </Layout>
-      <div className="container">
-        <div className="grid-2">
-          <img src={"./images/project1/IMG_1068.JPG"} className="image" />
-          <img src={"./images/project1/IMG_1069.JPG"} className="image" />
-          <img src={"./images/project1/IMG_1629.JPG"} className="image" />
-          <img src={"./images/project1/IMG_1630.JPG"} className="image" />
-        </div>
-      </div>
+      <Layout />
+      <P1 />
+      <Footer />
     </>
   );
 }

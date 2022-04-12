@@ -7,11 +7,16 @@
   h1 {
       font-size: 4rem;
       font-style: italic;
+      font-style: oblique;
       color: #464646;
       font-weight: 400;
-      
   }
 
+  hr {
+      width: 10%;
+      color: #464646;
+      margin-bottom: 3rem;
+  }
 
   .grid {
     display: grid;
