@@ -1,217 +1,82 @@
-.meet_us {
-  padding-bottom: 20px;
+@import "./../../styles/variables.scss";
+
+.container {
+  border-top: solid 1rem #ffa91d;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
+  hr {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .section {
+      max-width: 1250px;
+      margin: 4rem auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+        .text {
+          margin-top: 2rem;
+          padding: 1rem 3rem 0rem 3rem;
+          flex: 50%;
+          font-size: 2rem;
+        }
+        .heroImg {
+          align-items: center;
+          margin-top: 2rem;
+          padding: 1rem 3rem 0rem 3rem;
+          flex: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          img {
+            width: 100%;
+          }
+        }
+  }
 }
 
-.meet_us_section {
-  width: 100%;
-  height: auto;
-}
-
-.headshot {
-  position: relative;
-  float: left;
-  width: 27%;
-  text-align: center;
-  margin-top: -28px;
-}
-
-.headshot_image {
-  background: url("../../public/images/shrub.png");
-  box-shadow: 0 8px 6px -6px black;
-  border-radius: 5px;
-  width: 100%;
-}
 
 .meet_us_button {
-  border: none;
-  cursor: pointer;
-  font-family: "Ubuntu", sans-serif;
+  border: solid 1px rgb(43, 42, 42);
   padding: 15px;
   margin-top: 15px;
   text-align: center;
   font-size: 15px;
-  background-color: #f15a1c;
-  color: #ffff;
+  font-weight: 500;
+  background-color: #dddd;
+  color: black;
   transition: 0.5s;
-  width: 85%;
+  width: 50%;
 }
 
 .meet_us_button:hover {
-  background-color: #42a5f5;
+ background-color: #ffa91d;
+ color: #fff;
+ border: none;
 }
 
-.meet_us_wrapper {
-  border: 2px solid #f15a1c;
-  width: 60%;
-  position: relative;
-  float: right;
-  background-color: #e2e2e2;
-}
 
-.meet_us_content {
-  text-align: center;
-  font-size: 16px;
-  font-family: "Ubuntu", sans-serif;
-  color: #3d3d3d;
-  font-style: italic;
-}
+// @media (max-width: 1199px) {
+// }
 
-@media screen and (min-width: 1600px) {
-  .meet_us_content {
-    font-size: 20px;
-  }
+// @media (max-width: 991px) {
+  // .section {
+  //   column-count: 2;
+  // }
+// }
 
-  .meet_us_button {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 1599.98px) {
-  .meet_us_button {
-    font-size: 14px;
-  }
-}
+@media (max-width: 800px) {
+  .container{
 
-@media screen and (min-width: 993px) and (max-width: 1199.98px) {
-  .headshot {
-    margin-top: 0px;
-    width: 29%;
-  }
-
-  .meet_us_button {
-    font-size: 15px;
-    width: 100%;
-  }
-
-  .meet_us_wrapper {
-    width: 68%;
-  }
-
-  .meet_us_content {
-    font-size: 16px;
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 992.98px) {
-  .headshot {
-    margin-top: 0px;
-    width: 29%;
-  }
-
-  .meet_us_button {
-    font-size: 14.5px;
-    width: 100%;
-  }
-
-  .meet_us_wrapper {
-    width: 68%;
-  }
-
-  .meet_us_content {
-    font-size: 15px;
-  }
-}
-
-@media all and (min-width: 551px) and (max-width: 767.98px) {
-  .headshot {
-    margin-top: 0px;
-    width: 30%;
-  }
-
-  .meet_us_button {
-    padding: 10px;
-    font-size: 13px;
-    width: 100%;
-  }
-
-  .meet_us_wrapper {
-    width: 67%;
-  }
-
-  .meet_us_content {
-    font-size: 14px;
-  }
-}
-
-@media all and (min-width: 451px) and (max-width: 550.98px) {
-  .meet_us_wrapper {
-    width: 100%;
-  }
-
-  .meet_us_content {
-    font-size: 15px;
-  }
-  .headshot {
-    margin-top: 0px;
-    width: 45%;
-    margin-left: 27.5%;
-  }
-
-  .meet_us_button {
-    padding: 10px;
-    font-size: 14px;
-    width: 100%;
-  }
-}
-
-@media all and (min-width: 376px) and (max-width: 450.98px) {
-  .meet_us_wrapper {
-    width: 100%;
-  }
-
-  .meet_us_content {
-    font-size: 15px;
-  }
-  .headshot {
-    margin-top: 0px;
-    width: 45%;
-    margin-left: 27.5%;
-  }
-
-  .meet_us_button {
-    padding: 10px;
-    font-size: 13px;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .meet_us_wrapper {
-    width: 100%;
-  }
-
-  .meet_us_content {
-    font-size: 15px;
-  }
-  .headshot {
-    margin-top: 0px;
-    width: 45%;
-    margin-left: 27.5%;
-  }
-
-  .meet_us_button {
-    padding: 10px;
-    font-size: 12px;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 374.98px) {
-  .meet_us_wrapper {
-    width: 100%;
-  }
-
-  .meet_us_content {
-    font-size: 13px;
-  }
-  .headshot {
-    margin-top: 0px;
-    width: 45%;
-    margin-left: 27.5%;
-  }
-
-  .meet_us_button {
-    padding: 10px;
-    font-size: 12px;
-    width: 100%;
+    .section {
+        margin: 0 auto;
+        flex-direction: column;
+    }
   }
 }

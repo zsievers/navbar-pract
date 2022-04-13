@@ -4,22 +4,23 @@ import classes from "./about-dt.module.scss";
 
 const AboutUs = () => {
   return (
-    <div className={classes.meet_us}>
-      <div className={classes.meet_us_section}>
-        <div className={classes.meet_us_wrapper}>
-          <p className={classes.meet_us_content}>{meet.paragraphOne}</p>
+    <div className={classes.container}>
+      <h1>Why We Started</h1>
+      <hr />
+      <div className={classes.section}>
+        <div className={classes.text}>
           <p className={classes.meet_us_content}>{meet.paragraphTwo}</p>
+          {/* <p className={classes.meet_us_content}>{meet.paragraphOne}</p> */}
           <p className={classes.meet_us_content}>{meet.paragraphThree}</p>
         </div>
-        <div className="headshot">
+
+        <div className={classes.heroImg}>
           <img
-            src={"../../images/bobcat.jpg"}
+            src={"../../images/hero2.jpg"}
             className={classes.headshot_image}
           />
           <Link href="/freeEstimate">
-            <button className={classes.meet_us_button}>
-              REACH OUT AND SAY HI
-            </button>
+            <button className={classes.meet_us_button}>Click To Connect</button>
           </Link>
         </div>
       </div>
