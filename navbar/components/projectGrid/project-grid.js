@@ -52,7 +52,7 @@ export default function ProjectGrid() {
             </a>
           </div>
 
-          <div className={classes.projects}>
+          {/* <div className={classes.projects}>
             <a href="/projects/bathrooms">
               <img
                 src={"./images/Bathrooms/bathroom1.JPEG"}
@@ -60,14 +60,14 @@ export default function ProjectGrid() {
               />
               <div className={classes.projectTitle}>Custom Bathrooms</div>
             </a>
-          </div>
+          </div> */}
           {/* <div className={classes.projects}>
             <a href="/doors">
               <img src={"./images/doors/d1.png"} className={classes.image} />
               <div className={classes.projectTitle}>Custom Door Frames</div>
             </a>
           </div> */}
-          <div className={classes.projects}>
+          {/* <div className={classes.projects}>
             <a href="/grading_roofing">
               <img
                 src={"./images/grading_roof/roof2.JPEG"}
@@ -75,7 +75,7 @@ export default function ProjectGrid() {
               />
               <div className={classes.projectTitle}>Grading and Roofing</div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

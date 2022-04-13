@@ -15,7 +15,7 @@ function Ctest() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../../images/project3/5after.JPG"
+          src="../../images/mhero6.PNG"
           alt="Second slide"
         />
       </Carousel.Item>
@@ -23,6 +23,13 @@ function Ctest() {
         <img
           className="d-block w-100"
           src="../../images/cr5.png"
+          alt="Third slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="../../images/mhero7.jpg"
           alt="Third slide"
         />
       </Carousel.Item>

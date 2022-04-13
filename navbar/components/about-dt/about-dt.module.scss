@@ -43,21 +43,20 @@
 
 
 .meet_us_button {
-  border: solid 1px rgb(43, 42, 42);
   padding: 15px;
   margin-top: 15px;
   text-align: center;
   font-size: 15px;
   font-weight: 500;
-  background-color: #dddd;
-  color: black;
   transition: 0.5s;
   width: 50%;
+  background-color: #ffa91d;
+  color: #fff;
+  border: none;
 }
 
 .meet_us_button:hover {
- background-color: #ffa91d;
- color: #fff;
+ background-color: rgb(122, 122, 122);
  border: none;
 }
 

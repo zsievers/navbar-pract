@@ -73,9 +73,6 @@ const Header = () => {
             <li>
               <Link href="/freeEstimate" onClick={menuToggleHandler}>
                 Free Estimate
-                {/* <button onClick={classes.header__content__toggle}>
-              Free Estimate
-            </button> */}
               </Link>
             </li>
           </ul>
