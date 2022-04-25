@@ -1,7 +1,14 @@
 import emailjs from "emailjs-com";
 import classes from "./contact1.module.scss";
+import React, { useState } from "react";
+
+const Result = () => {
+  return <p>Your message has been sucessfully sent</p>;
+};
 
 const Mailer = () => {
+  const [result, showResult] = useState(false);
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -16,8 +23,14 @@ const Mailer = () => {
         console.log(res);
       })
       .catch((err) => console.log(err));
+    e.target.reset();
+    showResult(true);
   }
 
+  // hide result
+  setTimeout(() => {
+    showResult(false);
+  }, 5000);
   return (
     <div className={classes.container}>
       <h1>Contact</h1>
@@ -62,6 +75,7 @@ const Mailer = () => {
           className={classes.button}
           // style={{ marginTop: "30px", fontSize: "1.75rem" }}
         />
+        <div className="row">{result ? <Result /> : null}</div>
       </form>
     </div>
   );
